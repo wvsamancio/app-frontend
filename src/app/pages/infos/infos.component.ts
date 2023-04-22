@@ -8,7 +8,7 @@ import { InfoService } from 'src/app/services/info.service';
   styleUrls: ['./infos.component.css']
 })
 export class InfosComponent {
-  public infos: Info | any  
+  public infos: Info | any;  
 
   constructor(private infoService: InfoService) {}
 
