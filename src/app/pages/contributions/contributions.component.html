@@ -1,1 +1,8 @@
 <p>contributions works!</p>
+
+<ul *ngFor="let contribute of contributions">
+  <li>{{ contribute.content }}</li>
+  <li>{{ contribute.department }}</li>
+  <li>{{ contribute.lat }}</li>
+  <li>{{ contribute.lng }}</li>
+</ul>
