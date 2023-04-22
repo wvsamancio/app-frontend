@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { InfosComponent } from './infos/infos.component';
 import { ContributionsComponent } from './contributions/contributions.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { PagesRoutingModule } from './pages-routing.module';
 
 
 
@@ -15,7 +16,8 @@ import { ContactsComponent } from './contacts/contacts.component';
     ContactsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    PagesRoutingModule
   ]
 })
 export class PagesModule { }
