@@ -6,6 +6,8 @@ import { ContributionsComponent } from './contributions/contributions.component'
 import { ContactsComponent } from './contacts/contacts.component';
 import { PagesRoutingModule } from './pages-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { SharedModule } from '../shared/shared.module';
+import { ContributeComponent } from './contribute/contribute.component';
 
 
 
@@ -14,10 +16,12 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     InfosComponent,
     ContributionsComponent,
-    ContactsComponent
+    ContactsComponent,
+    ContributeComponent
   ],
   imports: [
     CommonModule,
+    SharedModule,
     PagesRoutingModule,
     HttpClientModule
   ]
