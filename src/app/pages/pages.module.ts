@@ -5,6 +5,7 @@ import { InfosComponent } from './infos/infos.component';
 import { ContributionsComponent } from './contributions/contributions.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { PagesRoutingModule } from './pages-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -17,7 +18,8 @@ import { PagesRoutingModule } from './pages-routing.module';
   ],
   imports: [
     CommonModule,
-    PagesRoutingModule
+    PagesRoutingModule,
+    HttpClientModule
   ]
 })
 export class PagesModule { }
