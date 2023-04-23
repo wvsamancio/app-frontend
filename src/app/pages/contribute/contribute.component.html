@@ -1,4 +1,4 @@
-<p>contribute works!</p>
+<h1>Contribuir:</h1>
 
 <form #contributeForm="ngForm" (ngSubmit)="onSubmit(contributeForm)">
   <div class="form-group">
@@ -11,6 +11,11 @@
       [ngModel]="content.value"
       required
     ></textarea>
+    <span>
+      <small *ngIf="content.invalid && (content.dirty || content.touched)"
+        >Informe o conteúdo</small
+      >
+    </span>
   </div>
   <div class="form-group">
     <label for="department">Departamento</label>
@@ -27,6 +32,18 @@
         {{ item.name }}
       </option>
     </select>
+    <span>
+      <small
+        *ngIf="department.invalid && (department.dirty || department.touched)"
+        >Informe o departmento</small
+      >
+    </span>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button
+    [disabled]="contributeForm.invalid"
+    type="submit"
+    class="btn btn-primary"
+  >
+    Enviar
+  </button>
 </form>
