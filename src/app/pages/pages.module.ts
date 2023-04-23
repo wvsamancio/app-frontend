@@ -8,6 +8,7 @@ import { PagesRoutingModule } from './pages-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from '../shared/shared.module';
 import { ContributeComponent } from './contribute/contribute.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -23,7 +24,8 @@ import { ContributeComponent } from './contribute/contribute.component';
     CommonModule,
     SharedModule,
     PagesRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ]
 })
 export class PagesModule { }
